@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\_LinkedinLearning\JSF_Learning\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+615503733.index
+2434300505.index
+1770901022.index
+344498239.index
+1570415043.index
+344498239.index
