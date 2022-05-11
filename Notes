@@ -1,0 +1,144 @@
+https://www.youtube.com/watch?v=TifG-hPO8lU&list=PLEAQNNR8IlB4S8nNUlS0ArfgU1nXlhdRu
+
+---
+2 JSP - Overview
+
+- What is JSF framework?
+- Mode-View-Controller Design Pattern
+- Benefits of JSP
+- Third-party JSF-ui components
+- JSF resources
+
+What is a JavaServer Faces (JSF)
+- Framework for building web applications in Java
+- Standard of JAva Enterprise Edition (Java EE)
+- Based on Model-View-Controller design pattern
+
+Model-View-Controller
+
+
+JSF benefits
+- Standard way of building web app UIs in Java
+- Leverage a set of reusable UI components
+- Help manage application state for web requests
+- process form data: validations, conversion etc
+
+Third-party JSF UI components
+- OpenFaces
+- RichFaces
+- PrimeFaces
+
+JSF Resources
+- https://www.oracle.com/java/technologies/javaserverfaces.html
+- Contains tutorials, documentation
+Current version JSF 2.2
+
+---
+9 JSF - Behind the scenes
+- Components of a JSF application
+- How JSF works behind the scenes
+- JSF versions
+- Application support 
+
+Components of a JSF Application
+- A set of pages to layout UI components
+- A set of managed beans
+- A web deployment descriptor (web.xml)
+- Optionally
+	- Application configuration files (faces-config.xml)
+	- Custom objects, components, custom tafs and validators
+
+How JSF works behind the sceness
+
+
+JSF Versions
+
+
+---
+11 JSF - Creating JSF HTML forms
+
+HTML Forms:
+- FOrms are used to get input from the user
+
+JSF UI Components
+- h:form - main form container
+- h:inputText - text field
+- h:textArea - multiline text field
+
+JSF Page Structure
+- Most common configurration is to use .xhtml file extension
+- HTML page with special JSF tags
+
+JSP Components / JSF Namespace
+COre components - http://xmlns.jcp.org/jsf/core
+HTML components - http://xmlns.jcp.org/jsf/html
+Faceles components - http://xmlns.jcp.org/jsf/facelets
+Composite components - http://xmlns.jcp.org/jsf/composite
+more...
+
+---
+ 12 JSF Forms and Managed Beans
+
+What are Managed Beans?
+	A managed bean is a regular Java class
+	Commonly used to hold form data
+	Can also contain business logic
+	Created and managed by JSF .. hence "managed bean"
+
+Requirements for Managed Beans
+	Must follow these rules:
+		Public no -arg constructor
+		Expose properties via public getter/setter methods
+	JSF 2 added support for annotation: @ManagedBean
+
+Creating a Managed Bean
+
+JSF Expression Language
+- Used to access properties of a managed bean
+- + other logic
+
+- Basic syntax
+	- #{<beanName>.<property>}
+
+Setting Managed Bean Property from JSF Page
+- To access a bean property from a JSF form:
+- <h:inputText value="#{student.firstname}" />
+	- When form is submitted JSF will call student.setFirstname()
+
+Reading Managed Bean property from a JSF Page
+
+---
+15 JSF Forms and Drop-Down Lists
+
+- What are dropdown Lists?
+- Review of HTML <select> tag
+- JSF Terminology: selectOneMenu
+- Full JSF Page Example
+
+---
+17 JSF Forms and Radio buttons
+- Radio button Demo
+- JSF TErminology: SelectOnr radio
+- Full JSF Page Example
+---
+18 JSF Forms and checkboxes
+- Checkbox Demo
+- JSF Terminology: selectManyCheckbox
+- Full JSF Page Example
+---
+19 JSF Prepopulate Form
+- Pre-populate Demo
+- Loading form data
+- Full JSF page Example
+---
+20  Validating JSF Form
+- The need for validation
+- Overview JSF Validation Features
+- New project
+---
+21 JSF Validating Required Fields
+- Required Fields Demo
+- Creating required fields
+- Display validation error messages
+- JSF page Example
+---
